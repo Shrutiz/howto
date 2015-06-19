@@ -13,10 +13,9 @@
 	);
 
 ## Populate the table
-	insert into weather values ('San Francisco', 46, 50, 0.25, '1994-11-27')
-;
+	insert into weather values ('Chennai', 46, 50, 0.25, '1994-11-27');
 #### or if you wish to omit columns
-	insert into weather (date, city, temp_hi, temp_lo) values ('1994-11-29', 'Hayward', 54, 37);
+	insert into weather (date, city, temp_hi, temp_lo) values ('1994-11-29','Delhi', 54, 37);
 
 #### or you can copy from a file
 	copy weather FROM '/home/user/weather.txt';
@@ -102,7 +101,7 @@
 	create table student(
 		course varchar(6),
 		insti varchar(30),
-		);
+		)inherits person;
 	
 
 
