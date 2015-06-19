@@ -26,11 +26,11 @@
 	select * from weather;
 
 ## where clause
-	select * from weather where city= "Chennai";
+	select * from weather where city= 'Chennai';
 ## and clause
-	select * from weather where temp_lo>20 and city= "Delhi";
+	select * from weather where temp_lo>20 and city= 'Delhi';
 ## or clause
-	select * from weather where city= "Chennai" or city= "Delhi";
+	select * from weather where city= 'Chennai' or city= 'Delhi';
 ## Sort the result
 	select * from weather order by name;
 #### Descending order
@@ -57,9 +57,9 @@
 	select avg(temp_hi) from weather;
 
 ## Update a table
-	update table set temp_hi= temp_hi+2 where city= "Chennai";
+	update table set temp_hi= temp_hi+2 where city= 'Chennai';
 ## Delete a table
-	delete from weather where city= "Delhi";
+	delete from weather where city= 'Delhi';
 #### or to delete all rows
 	delete from weather;
 ## Create views
@@ -88,7 +88,7 @@
 
 ## Save points
 	savepoint my_save;
-	update accounts set balance= balance- 100.00 where name= "Alice";
+	update accounts set balance= balance- 100.00 where name= 'Alice';
 	rollback to my_save;
 
 ## Inherit tables
