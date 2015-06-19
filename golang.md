@@ -115,3 +115,46 @@ type person struct{
 	o:= &p
 	o.age= 2
 ```
+### Arrays
+	var ar[10] int
+	ar[0]= 1
+
+### Slices
+	sl:= [] int {2,3,4}
+##### Created using make function
+	sl:= make([] int, 10)
+##### Add elements
+	sl= append(sl,1)
+##### Slice a slice
+	sl[1,5]
+##### Iterate over a slice
+```go
+for i, v:= range sl{	
+	fmt.Println(i,v)
+	}
+```
+
+###Maps
+	var m map[String] person
+	m= make(map[String]person)
+	m["Student"]= person {"Shruti",19}
+#####They can be assigned to many values,each with a different key
+	m= map[String]person{
+		"Student": person{"Shruti",19},
+		"Employee": person{"abc",25},
+		}
+##### Update
+	m["Student"]= person{"Abhi",20}
+##### Delete
+	delete(m,"Employee")
+##### Test
+	a,ok = m["Student"]
+
+### Methods
+Go doesn't have classes, however methods can be defined on structures using the method receiver
+
+	func (v *Vertex) add() float64
+
+Method receivers can be a pointer or a datatype i.e *Vertex or Vertex
+* *Vertex is like call by reference
+* Vertex is like call by value
