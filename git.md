@@ -1,6 +1,36 @@
-## create repository
-directly create from the web
-## or in gitbash
+## Setting up workspace
+####In System Settings, choose Advanced-> Environment Variable
+	Add Environment Variable GO PATH
+#### Also
+	Edit Variable PATH to add the path to your bin 
+## Create a directory
+	mkdir goplay
+## Create a repository
 	git init
-	vim file_name
-
+## Create a repo source
+	cd goplay
+	mkdir -p src/github.com/Shrutiz
+## Create a project folder
+	cd src/github.com/Shrutiz
+	mkdir howto
+	cd howto
+## Create new file
+	vim file_name.type
+## Add files
+	git add file_name
+## Commit files
+	git commit -m "commit message"
+## Push files
+	git push
+## Before pushing for the first time, set destination by
+	git add remote name url
+## Check your status
+	git status
+## Clone a repository									git clone url_path
+## Identify yourself									git config --global user.name "ShrutiZ"
+	git config --global user.email "shru@example.com"
+## Compile a go file (no exe file will be produced) 
+	go build
+## Build & Install a go file( exe file will be produced)
+	go install
+## A basic git guide									http://rogerdudler.github.io/git-guide/
