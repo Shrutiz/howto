@@ -26,11 +26,14 @@
 	git add remote name url
 ## Check your status
 	git status
-## Clone a repository									git clone url_path
-## Identify yourself									git config --global user.name "ShrutiZ"
+## Clone a repository
+	git clone url_path
+## Identify yourself
+	git config --global user.name "ShrutiZ"
 	git config --global user.email "shru@example.com"
 ## Compile a go file (no exe file will be produced) 
 	go build
 ## Build & Install a go file( exe file will be produced)
 	go install
-## A basic git guide									http://rogerdudler.github.io/git-guide/
+## A basic git guide
+	http://rogerdudler.github.io/git-guide/
