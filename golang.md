@@ -158,3 +158,22 @@ Go doesn't have classes, however methods can be defined on structures using the 
 Method receivers can be a pointer or a datatype i.e *Vertex or Vertex
 * *Vertex is like call by reference
 * Vertex is like call by value
+
+###Interfaces
+```go	
+	type shape interface{
+		area()int
+		}
+	
+	func (r rect) area()int{
+		return r.h* r.w
+		}
+```
+	Any value implementing the set of functions of the interface is said to implement the interface
+Here struct rect implements shape interface
+
+###Errors
+Error states can be handled by implementing the erroe interface. The function signature in error interface is
+	
+	Error() string
+
