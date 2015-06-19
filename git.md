@@ -31,9 +31,9 @@
 ## Identify yourself
 	git config --global user.name "ShrutiZ"
 	git config --global user.email "shru@example.com"
-## Compile a go file (no exe file will be produced) 
+## Compile a go file (exe file is created int your current directory) 
 	go build
-## Build & Install a go file( exe file will be produced)
+## Build & Install a go file (exe file will be created in bin)
 	go install
 ## A basic git guide
 	http://rogerdudler.github.io/git-guide/
