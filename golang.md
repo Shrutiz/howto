@@ -69,7 +69,9 @@ It decides the type from the value
 
 ###Defer statements
 Defers excution of statement till surrounding functions executes
+
 	defer fmt.Println("I am")
 	fmt.Println("Shruti")
+
 Multiple Defers are stored in a stack and follow LIFO during execution
 
