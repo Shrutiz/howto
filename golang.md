@@ -14,18 +14,22 @@ func main(){
 ###Imports
 	import "fmt"
 ##### for multiple
-	import(
-		"fmt" "math"
-		)
+```go
+import(
+	"fmt" "math"
+	)
+```
 Note: Any exported name must begin in caps
-#####Ex:
+Ex:
+
 		fmt.Println("hi")
 
 ###Functions
-	func add(x,y int) int {
+```go
+func add(x,y int) int {
 		return x+y
 	}
-
+```
 ###Variables
 	var num int
 ##### or
@@ -45,30 +49,35 @@ It decides the type from the value
 ##Control flow
 
 ###For loop
-	for i=0;i<5;i++{
+```go
+for i=0;i<5;i++{
 		fmt.Println("*")
 	}
-
+```
 ### If condition
-	if a%2==0{
+```go
+if a%2==0{
 		fmt.Println("Even")
 	}
-
+```
 ### Switch condition
-	switch os{
+```go
+switch os{
 	case "Windows":
 		fmt.Println("Windows")
 	case "Linux":
 		fmt.Println("Linux")
 	}
+```
 ##### Without a conditon, Switch can be cascading if-else
-	switch{
+```go
+switch{
 		case i%2==0: fmt.Println("Even")
 		case i%2!=0: fmt.Println("Odd")
 	}
-
+```
 ###Defer statements
-Defers excution of statement till surrounding functions executes
+Defers execution of statement till surrounding functions executes
 
 	defer fmt.Println("I am")
 	fmt.Println("Shruti")
@@ -89,18 +98,20 @@ or
 * No pointer arithmetic
 
 ### Structures
-	type person struct{
+```go
+type person struct{
 		name string
 		age int
 		}
-
+```
 * Access members using '.'
+```go
 	p:= person{}
 	p.name= "Shruti"
-
+```
 * Structure pointer
-	
+```go	
 	p:= person{}
 	o:= &p
 	o.age= 2
-
+```
