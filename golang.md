@@ -75,3 +75,32 @@ Defers excution of statement till surrounding functions executes
 
 Multiple Defers are stored in a stack and follow LIFO during execution
 
+## More Types
+
+### Pointers
+	var ip *int
+
+or
+
+	i:=7
+	ip:= &i
+
+* *p gives value
+* No pointer arithmetic
+
+### Structures
+	type person struct{
+		name string
+		age int
+		}
+
+* Access members using '.'
+	p:= person{}
+	p.name= "Shruti"
+
+* Structure pointer
+	
+	p:= person{}
+	o:= &p
+	o.age= 2
+
