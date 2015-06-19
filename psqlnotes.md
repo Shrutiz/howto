@@ -43,6 +43,7 @@
 * Right outer join
 * Left outer join
 * Full outer join
+
 #### Example
 	select * from cities inner join weather on (weather.city= cities.name);
 
@@ -51,6 +52,7 @@
 * max
 * min
 * avg
+
 #### Examples
 	select city from weather where temp_lo= (select max(temp_lo) from weather);
 	select avg(temp_hi) from weather;
