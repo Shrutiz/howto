@@ -23,7 +23,7 @@
 * Illogical, hence related to the right brain
 
 ###Note
-* Only when we enforce wishes/goals into our subconscious brain we get major will power to achieve them
-* While enforcing use only 100% positive statements
+* Only when we enforce wishes/goals into our subconscious brain we get major will power to achieve them.
+* While enforcing use only 100% positive statements.
 * Visualise the wishes and goals to enforce them. (as subconscious is connected to the right side)
 * To enforce something, thinking about just before sleeping helps as we slip into our subconscious mind then. 
