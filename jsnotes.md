@@ -6,8 +6,10 @@ Example:
 	var x= 7;
 	let y= "hey";
 	const s= 2;
+
 ####Hoisting
 We can refer to a variable declared later, without getting an exception
+
 #### Dynamic type conversion
 	var a= "42";
 	a="hello";
@@ -31,7 +33,7 @@ We can refer to a variable declared later, without getting an exception
 				console.log("Apples are $0.32 a pound.");
 			break;
 		}
-## creating objects
+## Creating objects
 	var car= new Object();
 	car.make= 'Honda';
 	car.model= 'City';
@@ -53,5 +55,5 @@ We can refer to a variable declared later, without getting an exception
 	mycar.color= 'Black';
 
 	Car.prototype.show= function(){
-		console.log("This is a " + this.color +" " + this.make+" "+ this.model		);
+		console.log("This is a " + this.color +" " + this.make+" "+ this.model);
 
