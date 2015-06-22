@@ -1,8 +1,9 @@
 ##Variable declaration
-* var- declares a normal variable
-* let- declares a local variable
+* var- declares a variable with function scope
+* let- declares a variable with block scope
 * const- declares a read only constant
 Example:
+
 	var x= 7;
 	let y= "hey";
 	const s= 2;
