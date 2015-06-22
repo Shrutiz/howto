@@ -56,4 +56,4 @@ We can refer to a variable declared later, without getting an exception
 
 	Car.prototype.show= function(){
 		console.log("This is a " + this.color +" " + this.make+" "+ this.model);
-
+		}
