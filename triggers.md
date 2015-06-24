@@ -31,6 +31,9 @@ This specifies a particular condition upon which the trigger must execute
 ##PL/pgSQL
 This language can be used in PostgreSQL to create functions, trigger procedures, loops etc.
 
+##Drop a trigger
+	drop trigger trig1 on master;
+
 ##Sample function
 
 	CREATE OR REPLACE FUNCTION master_trigger()RETURNS trigger AS $trig1$
