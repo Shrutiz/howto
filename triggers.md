@@ -11,11 +11,13 @@ A trigger is an instruction that the database should automatically execute a par
 * before
 * after
 * instead of
+
 This decides whether the procedure is executed before, after or instead of the operation.
 
 ##How many times
 * for each row
 * for each statement
+
 This specifies whether the trigger procedure should be fired once for every row affected by the trigger event, or just once.
 
 ##Optional conditions
