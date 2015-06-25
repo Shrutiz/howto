@@ -83,7 +83,7 @@ create table weather (
 		prcp      real,
 		date      date
 		);
-	```
+```
 ## For atomic transactions
 ```sql
 	begin;
@@ -98,7 +98,7 @@ create table weather (
 	rollback to my_save;
 ```
 ## Inherit tables
-	```sql
+```sql
 	create table person(
 	name varchar(30),
 	age int,
