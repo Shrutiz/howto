@@ -1,3 +1,4 @@
+#Triggers
 ##What are triggers?
 A trigger is an instruction that the database should automatically execute a particular function whenever a specific operation is performed.
 
@@ -59,5 +60,32 @@ This language can be used in PostgreSQL to create functions, trigger procedures,
 * Return - This statement returns a value from the function.
 * End - This specifies the end of operations in the function.
 * The function is usually written as a string constant with dollar quotes.
+
+#Slowly Changing Dimensions
+
+##What is a SCD?
+A Slowly Changing Dimension is a dimension(field) of a table that changes slowly but unpredictably, without following any regular schedule. Sometimes there is a need to record these changes, hence to manage SCDs there are 6 main methodologies.
+
+##Managing SCDs
+Suppose we need to maintain a history on an SCD. One way to create a separate history table for that dimension which contains the various values of it and the timeperiod of each value.
+####Example:
+
+	create table master(
+		id serial primary key,
+		nid numeric unique not null,
+		name text,
+		baser numeric,
+		taxr numeric,
+		discr numeric
+	);
+
+	create table pricehist(
+		id serial primary key,
+		itemid integer references master(id),
+		rate numeric,
+		wef date
+	);
+
+Here pricehist table is used to maintain a history of the SCD baser.
 
 
