@@ -5,13 +5,14 @@
 	psql mydb
 
 ## Create a table
+	``` sql
 	create table weather(
 		city varchar(50),
 		temp_lo int,
 		temp_hi int,
 		date date
 	);
-
+```
 ## Populate the table
 	insert into weather values ('Chennai', 46, 50, 0.25, '1994-11-27');
 #### or if you wish to omit columns
@@ -38,7 +39,7 @@
 ## To remove duplicates
 	select distinct city from weather;
 ## Joins
-* Inner join	
+* Inner join
 * Right outer join
 * Left outer join
 * Full outer join
@@ -67,12 +68,14 @@
 	select * from myview;
 
 ## Create primary key
+	``` sql
 	create table cities (
 		city     varchar(80) primary key,
 		location point
 		);
-
+```
 ## Create foreign key
+```sql
 	create table weather (
 		city      varchar(80) references cities(city),
 		temp_lo int,
@@ -80,18 +83,22 @@
 		prcp      real,
 		date      date
 		);
+	```
 ## For atomic transactions
+```sql
 	begin;
 	update accounts set balance = balance - 100.00 where name = 'Alice';
 	-- etc etc
 	commit;
-
+```
 ## Save points
+	```sql
 	savepoint my_save;
 	update accounts set balance= balance- 100.00 where name= 'Alice';
 	rollback to my_save;
-
+```
 ## Inherit tables
+	```sql
 	create table person(
 		name varchar(30),
 		age int,
@@ -102,6 +109,4 @@
 		course varchar(6),
 		insti varchar(30),
 		)inherits person;
-	
-
-
+	```

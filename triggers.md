@@ -3,7 +3,7 @@
 A trigger is an instruction that the database should automatically execute a particular function whenever a specific operation is performed.
 
 ##Sample Trigger
-	
+
 	create trigger change_rate
 	after update of rate on master
 	for each row execute procedure rate_update();
@@ -36,7 +36,7 @@ This language can be used in PostgreSQL to create functions, trigger procedures,
 	drop trigger trig1 on master;
 
 ##Sample function
-
+``` sql
 	CREATE OR REPLACE FUNCTION master_trigger()RETURNS trigger AS $trig1$
 		BEGIN
 		if(tg_op = 'UPDATE') then
@@ -48,7 +48,7 @@ This language can be used in PostgreSQL to create functions, trigger procedures,
 		return null;
 		END;
 		$trig1$ LANGUAGE plpgsql;
-
+```
 ##Keywords used
 
 * Create - THis creates the function
@@ -69,7 +69,7 @@ A Slowly Changing Dimension is a dimension(field) of a table that changes slowly
 ##Managing SCDs
 Suppose we need to maintain a history on an SCD. One way to create a separate history table for that dimension which contains the various values of it and the timeperiod of each value.
 ####Example:
-
+``` sql
 	create table master(
 		id serial primary key,
 		nid numeric unique not null,
@@ -85,7 +85,5 @@ Suppose we need to maintain a history on an SCD. One way to create a separate hi
 		rate numeric,
 		wef date
 	);
-
+```
 Here pricehist table is used to maintain a history of the SCD baser.
-
-
