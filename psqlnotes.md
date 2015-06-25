@@ -5,7 +5,7 @@
 	psql mydb
 
 ## Create a table
-	``` sql
+``` sql
 	create table weather(
 		city varchar(50),
 		temp_lo int,
@@ -68,16 +68,16 @@
 	select * from myview;
 
 ## Create primary key
-	``` sql
-	create table cities (
-		city     varchar(80) primary key,
-		location point
-		);
+``` sql
+create table cities (
+	city     varchar(80) primary key,
+	location point
+	);
 ```
 ## Create foreign key
 ```sql
-	create table weather (
-		city      varchar(80) references cities(city),
+create table weather (
+	city      varchar(80) references cities(city),
 		temp_lo int,
 		temp_hi   int,
 		prcp      real,
@@ -92,7 +92,7 @@
 	commit;
 ```
 ## Save points
-	```sql
+```sql
 	savepoint my_save;
 	update accounts set balance= balance- 100.00 where name= 'Alice';
 	rollback to my_save;
@@ -100,13 +100,13 @@
 ## Inherit tables
 	```sql
 	create table person(
-		name varchar(30),
-		age int,
-		gender varchar(1),
-		address varchar(80)
-		);
-	create table student(
-		course varchar(6),
-		insti varchar(30),
-		)inherits person;
-	```
+	name varchar(30),
+	age int,
+	gender varchar(1),
+	address varchar(80)
+	);
+create table student(
+	course varchar(6),
+	insti varchar(30),
+	)inherits person;
+```

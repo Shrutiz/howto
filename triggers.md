@@ -3,11 +3,11 @@
 A trigger is an instruction that the database should automatically execute a particular function whenever a specific operation is performed.
 
 ##Sample Trigger
-
+``` sql
 	create trigger change_rate
 	after update of rate on master
 	for each row execute procedure rate_update();
-
+```
 ##When
 * before
 * after
